@@ -1,0 +1,11 @@
+{
+  "name": "bdd-cucumber-exercise",
+  "version": "1.0.0",
+  "description": "A simple BDD exercise for learning Gherkin with Cucumber.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0"
+  }
+}
