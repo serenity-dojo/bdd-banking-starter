@@ -46,7 +46,6 @@ npm test
 
 - Add a new scenario to search by **Party ID**
 - Add a scenario where **no results are found**
-- (Optional) Modify the `partyService.js` logic to sort results alphabetically by name
 - Proceed with writing the other scenarios in the workbook.
 
 ## 💡 Tip

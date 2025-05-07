@@ -1,3 +1,9 @@
+/**
+ * PartyService.js
+ * This module provides functionality to load a list of parties and search for them by name or ID.
+ * In a real-world application, this data might be fetched from a database or an API.
+ * For the purpose of this example, we will use a simple in-memory array.
+ */
 let allParties = [];
 
 /**
