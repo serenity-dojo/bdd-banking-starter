@@ -1,6 +1,7 @@
-// filepath: /Users/john/Projects/Training/bdd-sanctions-starter/cucumber.js
 module.exports = {
     default: {
-        format: ['progress-bar', ['html', 'cucumber-report.html']]
+        format: ['progress-bar',
+            '@cucumber/pretty-formatter',
+            ['html', 'cucumber-report.html']]
     },
 };

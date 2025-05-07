@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A simple BDD exercise for learning Gherkin with Cucumber.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --format-options '{\"colorsEnabled\": true}' "
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^11.2.0"
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1"
   }
 }
