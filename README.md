@@ -6,6 +6,24 @@ This exercise helps you practice writing clear and expressive Gherkin scenarios 
 
 **Important:** You do **not** need to write any automation code. This is about expressing good BDD scenarios.
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js**: Version 16 or higher. You can download it from [nodejs.org](https://nodejs.org/).
+- **npm**: Comes bundled with Node.js.
+- **Visual Studio Code**: Download it from [code.visualstudio.com](https://code.visualstudio.com/).
+- **Cucumber for Visual Studio Code Extension**: Install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/?itemName=CucumberOpen.cucumber-official).
+
+To follow these exercises, open this project in Visual Studio Code after installing the required extension.
+
+To verify your Node.js and npm versions, run the following commands in your terminal:
+
+```bash
+node -v
+npm -v
+```
+
 ## 📁 Project Structure
 
 ```
