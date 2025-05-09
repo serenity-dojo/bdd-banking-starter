@@ -1,58 +1,56 @@
-## 🚀 Getting Started
+# BDD Banking Starter
 
-1. **Install dependencies**
+## 🛠 Getting Started
 
-   Run the following command to install the required dependencies:
+Follow the steps below to get the project running locally and start writing your own scenarios.
 
-   ```bash
-   npm install
-   ```
+### 🚀 Cloning the Project
 
-   You should see output similar to this:
+```bash
+git https://github.com/serenity-dojo/bdd-banking-starter
+cd bdd-banking-starter
+```
 
-   ```
-   added 50 packages, and audited 50 packages in 2s
-   found 0 vulnerabilities
-   ```
+### 💻 Open in VS Code
 
-2. **Verify Node.js and npm versions**
+```bash
+code .
+```
 
-   Ensure you have the correct versions of Node.js and npm installed by running:
+### 📦 Install dependencies
 
-   ```bash
-   node -v
-   npm -v
-   ```
+```bash
+npm install
+```
 
-   You should see something like this:
+### 🧪 Run the Tests
 
-   ```
-   v16.20.0
-   8.19.2
-   ```
+```bash
+npm run test
+```
 
-   If your versions are lower than the required versions (Node.js 16 or higher, npm 8 or higher), update them before proceeding.
+The report will be generated as `cucumber-report.html`.
 
-3. **Run the tests**
+---
 
-   Run the following command to execute the Gherkin scenarios:
+## ✍️ Add Scenarios for "Add a New Real-Time Payee Using PayID"
 
-   ```bash
-   npm test
-   ```
+This project includes Gherkin scenarios for managing PayID notifications. Now, your task is to implement a new set of scenarios related to adding a new real-time payee using a mobile number, email, ABN, or organisation ID.
 
-   This will run the scenarios using Cucumber.js and generate an HTML report if configured. You should see something like this at the end of the console output:
+Open the feature file at:
 
-   ```
-   3 scenarios (3 passed)
-   9 steps (9 passed)
-   0m00.016s (executing steps: 0m00.001s)
-   ```
+```bash
+features/add-new-payee.feature
+```
 
-An HTML report will also be generated at [`cucumber-report.html`](cucumber-report.html) in the project directory. Open this file in a browser to view the test results.
+In this file, add Gherkin scenarios for the following examples:
 
-## 🧪 Try These Tasks
+- The one where Nick enters a valid PayID using a mobile number
+- The one where Oscar enters a valid organisation identifier
+- The one where Lucia enters an incorrect mobile number ⇒ "please enter a valid Australian mobile number"
+- The one where Josh enters a US number ⇒ "please enter a valid Australian mobile number"
+- The one where Denise enters the email of a registered PayID user ⇒ The payee name is shown
+- The one where the email is not registered ⇒ "no matching payee"
+- The one where Sam enters a PayID already saved ⇒ "This payee already exists in your address book"
 
-- Add a new scenario to search by **Party ID**
-- Add a scenario where **no results are found**
-- Proceed with writing the other scenarios in the workbook.
+Use concrete data and expressive, business-readable Gherkin syntax.
