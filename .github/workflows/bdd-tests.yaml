@@ -1,4 +1,4 @@
-name: Run BDD Tests and Publish Cucumber Reports
+name: Run BDD Tests and Publish Cucumber Report
 
 on:
   push:
@@ -27,11 +27,16 @@ jobs:
         run: |
           npx cucumber-js --format html:cucumber-report.html
 
-      - name: Deploy cucumber-report.html to GitHub Pages
+      - name: Prepare Cucumber report for GitHub Pages
+        run: |
+          mkdir -p ./public
+          cp cucumber-report.html ./public/index.html
+
+      - name: Deploy Cucumber report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./public
           publish_branch: gh-pages
           keep_files: true
           destination_dir: .
