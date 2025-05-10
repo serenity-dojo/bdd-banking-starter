@@ -7,7 +7,7 @@ Follow the steps below to get the project running locally and start writing your
 ### 🚀 Cloning the Project
 
 ```bash
-git https://github.com/serenity-dojo/bdd-banking-starter
+git clone https://github.com/serenity-dojo/bdd-banking-starter
 cd bdd-banking-starter
 ```
 
