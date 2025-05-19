@@ -45,12 +45,16 @@ features/add-new-payee.feature
 
 In this file, add Gherkin scenarios for the following examples:
 
-- The one where Nick enters a valid PayID using a mobile number
-- The one where Oscar enters a valid organisation identifier
-- The one where Lucia enters an incorrect mobile number ⇒ "please enter a valid Australian mobile number"
-- The one where Josh enters a US number ⇒ "please enter a valid Australian mobile number"
-- The one where Denise enters the email of a registered PayID user ⇒ The payee name is shown
-- The one where the email is not registered ⇒ "no matching payee"
-- The one where Sam enters a PayID already saved ⇒ "This payee already exists in your address book"
+Rule: Customer must provide either a mobile number, email address, ABN or PayID Organisation Identifier
+
+Examples:
+
+    - The one where Nick enters a valid PayID using a mobile number
+    - The one where Oscar enters a valid organisation identifier
+    - The one where Lucia enters an incorrect mobile number ⇒ "please enter a valid Australian mobile number"
+    - The one where Josh enters a US number ⇒ "please enter a valid Australian mobile number"
+    - The one where Denise enters the email of a registered PayID user ⇒ The payee name is shown
+    - The one where the email is not registered ⇒ "no matching payee"
+    - The one where Sam enters a PayID already saved ⇒ "This payee already exists in your address book"
 
 Use concrete data and expressive, business-readable Gherkin syntax.
